@@ -1022,7 +1022,7 @@ span.typed-cursor {
 
 }
 
-@media screen and (max-width:576px) and (max-width:400px) {
+@media screen and (max-width:576px) and (min-width:400px) {
     #home {
         padding-bottom: 1.5rem;
     }
@@ -1079,11 +1079,47 @@ span.typed-cursor {
         padding: 25rem 0rem 2rem 0;
     }
 
+    #home .hero .left .btn {
+        margin-bottom: 50px;
+    }
+
     #home .hero .left .walk span {
         font-size: 28px;
     }
 
+    #about {
+        justify-content: center;
+        padding-top: 1.5rem;
+    }
+
+    #about .about {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        row-gap: 2rem;
+        margin-top: 25rem;
+    }
+
+    #about .about .card {
+        width: 100%;
+        padding: 3rem;
+    }
+
     #footer {
         padding-bottom: 10rem;
+    }
+
+    #footer .footer h1,
+    #footer .footer .wrap .card h1 {
+        font-size: 25px;
+    }
+
+    #footer .footer .wrap .card i {
+        font-size: 6rem;
+    }
+
+    #footer .footer .wrap {
+        row-gap: 2rem;
     }
 }
