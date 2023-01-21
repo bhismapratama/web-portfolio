@@ -145,8 +145,8 @@ header .navbar a:hover {
 
 #home .hero .right {
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     align-items: center;
     justify-content: center;
 }
@@ -1088,7 +1088,7 @@ span.typed-cursor {
     }
 
     #home .hero .left {
-        padding: 35rem 0rem 2rem 0;
+        padding: 30rem 0rem 2rem 0;
     }
 
     #home .hero .left .btn {
