@@ -146,10 +146,8 @@ header .navbar a:hover {
 #home .hero .right {
     display: flex;
     width: 70%;
-    height: 50%;
+    height: 60%;
     align-items: center;
-    justify-content: center;
-    background-color: #38BDDE;
 }
 
 #home .hero .right img {
@@ -1089,7 +1087,7 @@ span.typed-cursor {
     }
 
     #home .hero .left {
-        padding: 20rem 0rem 2rem 0;
+        padding: 28rem 0rem 2rem 0;
     }
 
     #home .hero .left .btn {
