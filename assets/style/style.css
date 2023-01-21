@@ -1068,7 +1068,7 @@ span.typed-cursor {
 
 @media screen and (max-width:400px) {
     #home {
-        height: 70vh;
+        height: 90vh;
     }
 
     #home .hero {
@@ -1097,13 +1097,13 @@ span.typed-cursor {
         flex-direction: column;
         width: 80%;
         align-items: center;
-        row-gap: 2rem;
         margin-top: 25rem;
     }
 
     #about .about .card {
         width: 100%;
         padding: 3rem;
+        margin-top: 2rem;
     }
 
     #footer {
@@ -1119,7 +1119,7 @@ span.typed-cursor {
         font-size: 6rem;
     }
 
-    #footer .footer .wrap {
-        row-gap: 2rem;
+    #footer .footer .wrap .card {
+        margin: 1rem;
     }
 }
