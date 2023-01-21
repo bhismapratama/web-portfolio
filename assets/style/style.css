@@ -766,7 +766,7 @@ span.typed-cursor {
 #footer .footer .wrap .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--card-color);
     border-radius: 2rem;
     padding: 2rem;
@@ -1029,6 +1029,36 @@ span.typed-cursor {
 
     #footer .footer .wrap {
         row-gap: 2rem;
+    }
+
+    #code .design .card .image img.img1 {
+        width: 50%;
+        animation: upDown 1.5s ease-in-out infinite alternate-reverse both;
+    }
+    
+    @keyframes upDown {
+        0% {
+            transform: translateY(20px);
+        }
+    
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    #code .design .card .image img.img2 {
+        width: 50%;
+        animation: downUp 1.5s ease-in-out infinite alternate-reverse both;
+    }
+    
+    @keyframes downUp {
+        0% {
+            transform: translateY(-20px);
+        }
+    
+        100% {
+            transform: translateY(20px);
+        }
     }
 
 }
