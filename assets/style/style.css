@@ -146,13 +146,14 @@ header .navbar a:hover {
 #home .hero .right {
     display: flex;
     width: 70%;
-    height: 70%;
+    height: 50%;
     align-items: center;
     justify-content: center;
+    background-color: #38BDDE;
 }
 
 #home .hero .right img {
-    width: 50%;
+    width: 70%;
 }
 
 #home .hero .left {
