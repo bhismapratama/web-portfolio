@@ -143,6 +143,11 @@ header .navbar a:hover {
     justify-content: space-between;
 }
 
+#home .hero .right {
+    display: flex;
+    width: 50%;
+}
+
 #home .hero .left {
     display: flex;
     flex-direction: column;
@@ -1068,7 +1073,7 @@ span.typed-cursor {
 
 @media screen and (max-width:400px) {
     #home {
-        height: 90vh;
+        height: 80vh;
     }
 
     #home .hero {
@@ -1076,7 +1081,7 @@ span.typed-cursor {
     }
 
     #home .hero .left {
-        padding: 25rem 0rem 2rem 0;
+        padding: 35rem 0rem 2rem 0;
     }
 
     #home .hero .left .btn {
