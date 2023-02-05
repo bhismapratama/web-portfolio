@@ -143,21 +143,10 @@ header .navbar a:hover {
     justify-content: space-between;
 }
 
-#home .hero .right {
-    display: flex;
-    width: 70%;
-    height: 60%;
-    align-items: center;
-}
-
-#home .hero .right img {
-    width: 70%;
-}
-
 #home .hero .left {
     display: flex;
     flex-direction: column;
-    padding: 2rem 10rem 2rem 0;
+    padding: 2rem 0rem 2rem 0;
     width: 60%;
     color: var(--text-color);
     transition: all .3s ease-in-out;
@@ -180,7 +169,7 @@ span.typed-cursor {
 }
 
 #home .hero .left p {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 2rem;
 }
 
@@ -193,20 +182,13 @@ span.typed-cursor {
     margin: 1.5rem 0;
 }
 
+#home .hero .left .btn {
+    margin-top: 4rem;
+}
+
 #home .hero .right {
     display: flex;
-    width: 30%;
-}
-
-#home .hero .right img {
-    width: 100%;
-    border-radius: 20rem;
-    cursor: pointer;
-}
-
-#home .hero .right img:hover {
-    transform: rotate(10deg);
-    border-radius: 10rem;
+    width: 60%;
 }
 
 /* ============== about ============== */
@@ -823,6 +805,7 @@ span.typed-cursor {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100vh;
     }
 
     #home .hero {
@@ -842,20 +825,44 @@ span.typed-cursor {
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 45rem 0rem 2rem 0;
+        padding: 55rem 0rem 2rem 0;
+    }
+
+    #home .hero .left p {
+        font-size: 32px;
+    }
+
+    #home .hero .left .p {
+        width: 80%;
+        margin: 5rem 0;
+        font-size: 20px;
     }
 
     #home .hero .left .btn {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     #home .hero .right {
-        padding-top: 5rem;
-        width: 40%;
+        padding-top: 0rem;
+        width: 80%;
     }
 
     #about {
         padding-top: 5rem;
+    }
+
+    #about .about {
+        padding: 2rem;
+    }
+
+    #about .about .card {
+        padding: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    #design .design .btn, #code .design .btn {
+        width: 70%;
     }
 
     #footer .footer .wrap {
@@ -939,26 +946,21 @@ span.typed-cursor {
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 45rem 0rem 2rem 0;
+        padding: 48rem 0rem 2rem 0;
     }
 
     #home .hero .left .btn {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     #home .hero .right {
-        padding-top: 5rem;
-        width: 40%;
-    }
-
-    #home .hero .right img:hover {
-        transform: rotate(10deg);
-        border-radius: 10rem;
+        padding-top: 3rem;
+        width: 70%;
     }
 
     #about {
         justify-content: center;
-        padding-top: 1.5rem;
+        padding-top: 5rem;
     }
 
     #about .about {
@@ -967,6 +969,7 @@ span.typed-cursor {
         width: 80%;
         align-items: center;
         row-gap: 2rem;
+        margin-bottom: 5rem;
     }
 
     #about .about .card {
@@ -987,7 +990,8 @@ span.typed-cursor {
 
     #design .design,
     #code .design {
-        row-gap: 2rem;
+        row-gap: 5rem;
+        margin-bottom: 5rem;
     }
 
     #design .design .card,
@@ -1063,7 +1067,7 @@ span.typed-cursor {
 
 }
 
-@media screen and (max-width:576px) and (min-width:400px) {
+@media screen and (max-width:476px) and (min-width:400px) {
     #home {
         padding-bottom: 1.5rem;
     }
@@ -1074,6 +1078,27 @@ span.typed-cursor {
 
     #home .hero .left {
         padding: 35rem 0rem 2rem 0;
+    }
+
+    #home .hero .left span {
+        margin-top: 5rem;
+    }
+
+    #home .hero .left .btn {
+        margin-top: 10rem;
+    }
+
+    #home .hero .right {
+        padding-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home .hero .right lottie-player {
+        width: 100%;
     }
 
     #about {
@@ -1102,22 +1127,46 @@ span.typed-cursor {
 
     #design .design .card,
     #code .design .card {
-        width: 85%;
+        width: 90%;
+    }
+
+    #footer {
+        padding-bottom: 7rem;
+    }
+
+    #footer .footer h1,
+    #footer .footer .wrap .card h1 {
+        font-size: 25px;;
+    }
+
+    #footer .footer .wrap .card i {
+        font-size: 6rem;
+    }
+
+    #footer .footer .wrap .card {
+        margin: .5rem;
+        align-items: center;
+        width: 80%;
+        padding: 3rem;
     }
 }
 
 
 @media screen and (max-width:400px) {
     #home {
-        height: 80vh;
+        height: 90vh;
     }
 
     #home .hero {
         padding: 0;
     }
 
+    #home .hero .right {
+        padding-top: 4rem;
+    }
+
     #home .hero .left {
-        padding: 28rem 0rem 2rem 0;
+        padding: 30rem 0rem 2rem 0;
     }
 
     #home .hero .left .btn {
@@ -1136,9 +1185,9 @@ span.typed-cursor {
     #about .about {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         align-items: center;
-        margin-top: 25rem;
+        margin-top: 5rem;
     }
 
     #about .about .card {
@@ -1147,13 +1196,18 @@ span.typed-cursor {
         margin-top: 2rem;
     }
 
+    #design .design .card,
+    #code .design .card {
+        width: 95%;
+    }
+
     #footer {
-        padding-bottom: 10rem;
+        padding-bottom: 7rem;
     }
 
     #footer .footer h1,
     #footer .footer .wrap .card h1 {
-        font-size: 25px;
+        font-size: 25px;;
     }
 
     #footer .footer .wrap .card i {
@@ -1161,6 +1215,23 @@ span.typed-cursor {
     }
 
     #footer .footer .wrap .card {
-        margin: 1rem;
+        margin: .5rem;
+        align-items: center;
+        width: 80%;
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #home {
+        height: 100vh;
+    }
+
+    #home .hero {
+        padding: 0;
+    }
+
+    #home .hero .right {
+        padding-top: 4rem;
     }
 }
